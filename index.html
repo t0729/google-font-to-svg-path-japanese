@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
@@ -38,68 +38,68 @@
             </div>
 
             <div class="input-holder">
-                <label>(optional) upload font: <input id="font-upload" type="file" class="input" /></label>
-                <button id="font-upload-remove" class="input">Remove</button>
+                    <label>(オプション) フォントをアップロード: <input id="font-upload" type="file" class="input" /></label>
+                <button id="font-upload-remove" class="input">削除</button>
             </div>
             
             <div class="input-holder">
-                <label>variant: <select id="font-variant" class="input"></select></label>
+                <label>スモールキャップ: <select id="font-variant" class="input"></select></label>
             </div>
 
             <div class="input-holder">
-                <label>text: <input type="text" id="input-text" value="Verb" class="input-text input" /></label>
+                <label>テキスト: <input type="text" id="input-text" value="Verb" class="input-text input" /></label>
 
             </div>
             <div class="input-holder">
-                <label>size: <input type="number" id="input-size" value="100" class="input-size input" /></label>
+                <label>フォントサイズ: <input type="number" id="input-size" value="100" class="input-size input" /></label>
             </div>
 
             <div class="input-holder">
-                <label>union: <input type="checkbox" id="input-union" /></label>
+                <label>連合: <input type="checkbox" id="input-union" /></label>
             </div>
 
             <div class="input-holder">
-                <label>kerning: <input type="checkbox" id="input-kerning" checked /></label>
+                <label>文字間隔の調整: <input type="checkbox" id="input-kerning" checked /></label>
             </div>
 
             <div class="input-holder">
-                <label>fill: <input type="checkbox" id="input-filled" checked /></label>
+                <label>塗りつぶし: <input type="checkbox" id="input-filled" checked /></label>
             </div>
 
-            <div class="input-holder"><label>separate characters: <input type="checkbox" id="input-separate" /></label>
+            <div class="input-holder"><label>文字を分離: <input type="checkbox" id="input-separate" /></label>
             </div>
 
             <div class="input-holder">
-                <label>bezier accuracy <span
+                <label>曲線の滑らかさ <span
                         title="0.5 = accurate to half a pixel &#013;.001 = accurate to 1/1000th of a pixel &#013;smaller numbers take longer to compute &#013;leave blank for auto">&#128712;</span>
                     : <input type="text" id="input-bezier-accuracy" placeholder="auto" class="input" /></label>
             </div>
 
             <div class="input-holder">
-                <label>Dxf Units: <select id="dxf-units" class="input"></select></label>
+                <label>Dxf単位: <select id="dxf-units" class="input"></select></label>
             </div>
 
             <div class="input-holder">
-                <label>Fill: <input type="text" id="input-fill" value="#000" class="input-fill input" data-coloris /></label>
+                <label>塗りつぶしの色: <input type="text" id="input-fill" value="#000" class="input-fill input" data-coloris /></label>
             </div>
 
             <div class="input-holder">
-                <label>Stroke: <input type="text" id="input-stroke" value="#000" class="input-stroke input" data-coloris /></label>
+                <label>枠の色: <input type="text" id="input-stroke" value="#000" class="input-stroke input" data-coloris /></label>
             </div>
 
             <div class="input-holder">
-                <label>Stroke Width: <input type="text" id="input-stroke-width" value="0.25mm" class="input-stroke-width input"/></label>
+                <label>枠の太さ: <input type="text" id="input-stroke-width" value="0.25mm" class="input-stroke-width input"/></label>
             </div>
 
             <div class="input-holder">
-                <label>Non-scaling stroke: <input type="checkbox" id="input-stroke-non-scaling" checked class="input-stroke-non-scaling input"/></label>
+                <label>拡大・縮小時に線の太さを保持する: <input type="checkbox" id="input-stroke-non-scaling" checked class="input-stroke-non-scaling input"/></label>
             </div>
 
             <div class="input-holder">
-                <label>Fill rule: 
+                <label>塗りつぶしのルール: 
                     <select id="input-fill-rule" class="input">
-                        <option value="evenodd">evenodd</option>
-                        <option value="nonzero">nonzero</option>
+                        <option value="evenodd">偶数</option>
+                        <option value="nonzero">0以外</option>
                     </select>
                 </label>
             </div>
@@ -109,11 +109,10 @@
             <div class="textarea-container">
                 <textarea id="output-svg" readonly></textarea>
                 <div class="buttons-container">
-                    <button class="btn" id="copy-to-clipboard-btn">copy to clipboard</button>
-                    <a id="download-btn" class="btn">Download Svg</a>
-                    <a id="create-link" class="btn">Create link</a>
-                    <a id="dxf-btn" class="btn">Download Dxf</a>
-                    <a id="buy-coffee" class="btn" href="https://buymeacoffee.com/danmarshall" target="_blank">Buy me a coffee 🙂🍵</a>
+                    <button class="btn" id="copy-to-clipboard-btn">クリップボードにコピー</button>
+                    <a id="download-btn" class="btn">SVGとしてダウンロード/a>
+                    <a id="create-link" class="btn">リンクを作成</a>
+                    <a id="dxf-btn" class="btn">Dxfとしてダウンロード</a>
                 </div>
             </div>
         </div>
